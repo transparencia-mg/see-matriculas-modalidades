@@ -1,0 +1,352 @@
+{
+  "version": "4.16.6",
+  "time": 5.369,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "description": "Insira a descrição/explicação detalhada deste recurso.",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "encoding": "utf-8-sig",
+        "format": "csv",
+        "hashing": "md5",
+        "name": "see-matriculas-modalidades-2023",
+        "path": "data/see-matriculas-modalidades-2023.csv",
+        "profile": "tabular-data-resource",
+        "schema": {
+          "fields": [
+            {
+              "name": "ano",
+              "type": "integer"
+            },
+            {
+              "name": "mes",
+              "type": "integer"
+            },
+            {
+              "name": "cod_sre",
+              "type": "integer"
+            },
+            {
+              "name": "cod_municipio_ibge",
+              "type": "integer"
+            },
+            {
+              "name": "cod_escola_inep",
+              "type": "integer"
+            },
+            {
+              "name": "modalidade",
+              "type": "string"
+            },
+            {
+              "name": "qtd_matriculas",
+              "type": "integer"
+            },
+            {
+              "name": "suprimido",
+              "type": "string"
+            }
+          ]
+        },
+        "scheme": "file",
+        "title": "Insira um título humanamente legível para este recurso.",
+        "stats": {
+          "hash": "4f3b6ce5d1a4e9e506325f0bdeeb975c",
+          "bytes": 4126624,
+          "fields": 8,
+          "rows": 75219
+        }
+      },
+      "time": 1.385,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    },
+    {
+      "resource": {
+        "description": "Insira a descrição/explicação detalhada deste recurso.",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "encoding": "utf-8-sig",
+        "format": "csv",
+        "hashing": "md5",
+        "name": "see-matriculas-modalidades-2024",
+        "path": "data/see-matriculas-modalidades-2024.csv",
+        "profile": "tabular-data-resource",
+        "schema": {
+          "fields": [
+            {
+              "name": "ano",
+              "type": "integer"
+            },
+            {
+              "name": "mes",
+              "type": "integer"
+            },
+            {
+              "name": "cod_sre",
+              "type": "integer"
+            },
+            {
+              "name": "cod_municipio_ibge",
+              "type": "integer"
+            },
+            {
+              "name": "cod_escola_inep",
+              "type": "integer"
+            },
+            {
+              "name": "modalidade",
+              "type": "string"
+            },
+            {
+              "name": "qtd_matriculas",
+              "type": "integer"
+            },
+            {
+              "name": "suprimido",
+              "type": "string"
+            }
+          ]
+        },
+        "scheme": "file",
+        "title": "Insira um título humanamente legível para este recurso.",
+        "stats": {
+          "hash": "04f95f88398cfbf6f1db0885fcff2861",
+          "bytes": 4177858,
+          "fields": 8,
+          "rows": 76131
+        }
+      },
+      "time": 1.384,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    },
+    {
+      "resource": {
+        "description": "Insira a descrição/explicação detalhada deste recurso.",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "encoding": "utf-8-sig",
+        "format": "csv",
+        "hashing": "md5",
+        "name": "see-matriculas-modalidades-2025",
+        "path": "data/see-matriculas-modalidades-2025.csv",
+        "profile": "tabular-data-resource",
+        "schema": {
+          "fields": [
+            {
+              "name": "ano",
+              "type": "integer"
+            },
+            {
+              "name": "mes",
+              "type": "integer"
+            },
+            {
+              "name": "cod_sre",
+              "type": "integer"
+            },
+            {
+              "name": "cod_municipio_ibge",
+              "type": "integer"
+            },
+            {
+              "name": "cod_escola_inep",
+              "type": "integer"
+            },
+            {
+              "name": "modalidade",
+              "type": "string"
+            },
+            {
+              "name": "qtd_matriculas",
+              "type": "integer"
+            },
+            {
+              "name": "suprimido",
+              "type": "string"
+            }
+          ]
+        },
+        "scheme": "file",
+        "title": "Insira um título humanamente legível para este recurso.",
+        "stats": {
+          "hash": "d38bee3c5af383376b76fed0f22a7ff3",
+          "bytes": 4116124,
+          "fields": 8,
+          "rows": 75363
+        }
+      },
+      "time": 1.379,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    },
+    {
+      "resource": {
+        "description": "Insira a descrição/explicação detalhada deste recurso.",
+        "dialect": {
+          "delimiter": ";"
+        },
+        "encoding": "utf-8-sig",
+        "format": "csv",
+        "hashing": "md5",
+        "name": "see-matriculas-modalidades-2026",
+        "path": "data/see-matriculas-modalidades-2026.csv",
+        "profile": "tabular-data-resource",
+        "schema": {
+          "fields": [
+            {
+              "name": "ano",
+              "type": "integer"
+            },
+            {
+              "name": "mes",
+              "type": "integer"
+            },
+            {
+              "name": "cod_sre",
+              "type": "integer"
+            },
+            {
+              "name": "cod_municipio_ibge",
+              "type": "integer"
+            },
+            {
+              "name": "cod_escola_inep",
+              "type": "integer"
+            },
+            {
+              "name": "modalidade",
+              "type": "string"
+            },
+            {
+              "name": "qtd_matriculas",
+              "type": "integer"
+            },
+            {
+              "name": "suprimido",
+              "type": "string"
+            }
+          ]
+        },
+        "scheme": "file",
+        "title": "Insira um título humanamente legível para este recurso.",
+        "stats": {
+          "hash": "ff3dbec42c08247c51a6064e1fab5345",
+          "bytes": 3618309,
+          "fields": 8,
+          "rows": 64845
+        }
+      },
+      "time": 1.184,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 4
+  },
+  "valid": true
+}
