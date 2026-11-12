@@ -2,120 +2,198 @@ name: see-matriculas-modalidades
 owner_org: secretaria-de-estado-de-educacao-de-minas-gerais
 profile: data-package
 resources:
-  - description: Insira a descrição/explicação detalhada deste recurso.
-    dialect:
-      delimiter: ;
-    encoding: utf-8-sig
-    format: csv
-    hashing: md5
-    name: see-matriculas-modalidades-2023
-    path: data/see-matriculas-modalidades-2023.csv
-    profile: tabular-data-resource
-    schema:
-      fields:
-        - name: ano
-          type: integer
-        - name: mes
-          type: integer
-        - name: cod_sre
-          type: integer
-        - name: cod_municipio_ibge
-          type: integer
-        - name: cod_escola_inep
-          type: integer
-        - name: modalidade
-          type: string
-        - name: qtd_matriculas
-          type: integer
-        - name: suprimido
-          type: string
-    scheme: file
-    title: Insira um título humanamente legível para este recurso.
-  - description: Insira a descrição/explicação detalhada deste recurso.
-    dialect:
-      delimiter: ;
-    encoding: utf-8-sig
-    format: csv
-    hashing: md5
-    name: see-matriculas-modalidades-2024
-    path: data/see-matriculas-modalidades-2024.csv
-    profile: tabular-data-resource
-    schema:
-      fields:
-        - name: ano
-          type: integer
-        - name: mes
-          type: integer
-        - name: cod_sre
-          type: integer
-        - name: cod_municipio_ibge
-          type: integer
-        - name: cod_escola_inep
-          type: integer
-        - name: modalidade
-          type: string
-        - name: qtd_matriculas
-          type: integer
-        - name: suprimido
-          type: string
-    scheme: file
-    title: Insira um título humanamente legível para este recurso.
-  - description: Insira a descrição/explicação detalhada deste recurso.
-    dialect:
-      delimiter: ;
-    encoding: utf-8-sig
-    format: csv
-    hashing: md5
-    name: see-matriculas-modalidades-2025
-    path: data/see-matriculas-modalidades-2025.csv
-    profile: tabular-data-resource
-    schema:
-      fields:
-        - name: ano
-          type: integer
-        - name: mes
-          type: integer
-        - name: cod_sre
-          type: integer
-        - name: cod_municipio_ibge
-          type: integer
-        - name: cod_escola_inep
-          type: integer
-        - name: modalidade
-          type: string
-        - name: qtd_matriculas
-          type: integer
-        - name: suprimido
-          type: string
-    scheme: file
-    title: Insira um título humanamente legível para este recurso.
-  - description: Insira a descrição/explicação detalhada deste recurso.
-    dialect:
-      delimiter: ;
-    encoding: utf-8-sig
-    format: csv
-    hashing: md5
-    name: see-matriculas-modalidades-2026
-    path: data/see-matriculas-modalidades-2026.csv
-    profile: tabular-data-resource
-    schema:
-      fields:
-        - name: ano
-          type: integer
-        - name: mes
-          type: integer
-        - name: cod_sre
-          type: integer
-        - name: cod_municipio_ibge
-          type: integer
-        - name: cod_escola_inep
-          type: integer
-        - name: modalidade
-          type: string
-        - name: qtd_matriculas
-          type: integer
-        - name: suprimido
-          type: string
-    scheme: file
-    title: Insira um título humanamente legível para este recurso.
-title: See matriculas modalidades
+- description: Matrículas da rede estadual de Minas Gerais por modalidade (tipo de ensino), escola e mês, ano letivo 2023.
+  dialect:
+    delimiter: ;
+  encoding: utf-8-sig
+  format: csv
+  hashing: md5
+  name: see-matriculas-modalidades-2023
+  path: data/see-matriculas-modalidades-2023.csv
+  profile: tabular-data-resource
+  schema:
+    fields:
+    - name: ano
+      type: integer
+      title: Ano letivo
+      description: Ano letivo das matrículas.
+    - name: mes
+      type: integer
+      title: Mês de referência
+      description: Mês de referência (2 = fevereiro a 12 = dezembro). A contagem considera as matrículas ativas no último dia do mês.
+    - name: cod_sre
+      type: string
+      title: Código da SRE
+      description: Código da Superintendência Regional de Ensino (SRE), com 6 dígitos.
+    - name: cod_municipio_ibge
+      type: string
+      title: Código IBGE do município
+      description: Código IBGE do município (7 dígitos) do endereço de funcionamento da escola.
+    - name: cod_escola_inep
+      type: string
+      title: Código INEP da escola
+      description: Código INEP da escola. Nome, endereço, SRE e município da escola podem ser obtidos no conjunto de endereços das escolas, cruzando por este código.
+    - name: modalidade
+      type: string
+      title: Modalidade (tipo de ensino)
+      description: 'Tipo de ensino conforme registrado no SIMADE, por exemplo: ENSINO REGULAR, INTEGRAL, INTEGRAL PROFISSIONAL, PROFISSIONAL, ENSINO REGULAR PROFISSIONAL, EDUCACAO DE JOVENS E ADULTOS (EJA) e EDUCAÇÃO DE JOVENS E ADULTOS (EJA) PROFISSIONAL. Categorias exclusivas: cada matrícula está em uma única modalidade.'
+    - name: qtd_matriculas
+      type: integer
+      title: Quantidade de matrículas
+      description: Quantidade de matrículas ativas no último dia do mês. Vazio quando o valor foi suprimido (1 a 4 matrículas) para proteção de dados pessoais (LGPD).
+    - name: suprimido
+      type: string
+      title: Valor suprimido
+      description: S = quantidade ocultada para proteção de dados pessoais (LGPD); N = quantidade divulgada.
+  scheme: file
+  title: Matrículas por modalidade - 2023
+- description: Matrículas da rede estadual de Minas Gerais por modalidade (tipo de ensino), escola e mês, ano letivo 2024.
+  dialect:
+    delimiter: ;
+  encoding: utf-8-sig
+  format: csv
+  hashing: md5
+  name: see-matriculas-modalidades-2024
+  path: data/see-matriculas-modalidades-2024.csv
+  profile: tabular-data-resource
+  schema:
+    fields:
+    - name: ano
+      type: integer
+      title: Ano letivo
+      description: Ano letivo das matrículas.
+    - name: mes
+      type: integer
+      title: Mês de referência
+      description: Mês de referência (2 = fevereiro a 12 = dezembro). A contagem considera as matrículas ativas no último dia do mês.
+    - name: cod_sre
+      type: string
+      title: Código da SRE
+      description: Código da Superintendência Regional de Ensino (SRE), com 6 dígitos.
+    - name: cod_municipio_ibge
+      type: string
+      title: Código IBGE do município
+      description: Código IBGE do município (7 dígitos) do endereço de funcionamento da escola.
+    - name: cod_escola_inep
+      type: string
+      title: Código INEP da escola
+      description: Código INEP da escola. Nome, endereço, SRE e município da escola podem ser obtidos no conjunto de endereços das escolas, cruzando por este código.
+    - name: modalidade
+      type: string
+      title: Modalidade (tipo de ensino)
+      description: 'Tipo de ensino conforme registrado no SIMADE, por exemplo: ENSINO REGULAR, INTEGRAL, INTEGRAL PROFISSIONAL, PROFISSIONAL, ENSINO REGULAR PROFISSIONAL, EDUCACAO DE JOVENS E ADULTOS (EJA) e EDUCAÇÃO DE JOVENS E ADULTOS (EJA) PROFISSIONAL. Categorias exclusivas: cada matrícula está em uma única modalidade.'
+    - name: qtd_matriculas
+      type: integer
+      title: Quantidade de matrículas
+      description: Quantidade de matrículas ativas no último dia do mês. Vazio quando o valor foi suprimido (1 a 4 matrículas) para proteção de dados pessoais (LGPD).
+    - name: suprimido
+      type: string
+      title: Valor suprimido
+      description: S = quantidade ocultada para proteção de dados pessoais (LGPD); N = quantidade divulgada.
+  scheme: file
+  title: Matrículas por modalidade - 2024
+- description: Matrículas da rede estadual de Minas Gerais por modalidade (tipo de ensino), escola e mês, ano letivo 2025.
+  dialect:
+    delimiter: ;
+  encoding: utf-8-sig
+  format: csv
+  hashing: md5
+  name: see-matriculas-modalidades-2025
+  path: data/see-matriculas-modalidades-2025.csv
+  profile: tabular-data-resource
+  schema:
+    fields:
+    - name: ano
+      type: integer
+      title: Ano letivo
+      description: Ano letivo das matrículas.
+    - name: mes
+      type: integer
+      title: Mês de referência
+      description: Mês de referência (2 = fevereiro a 12 = dezembro). A contagem considera as matrículas ativas no último dia do mês.
+    - name: cod_sre
+      type: string
+      title: Código da SRE
+      description: Código da Superintendência Regional de Ensino (SRE), com 6 dígitos.
+    - name: cod_municipio_ibge
+      type: string
+      title: Código IBGE do município
+      description: Código IBGE do município (7 dígitos) do endereço de funcionamento da escola.
+    - name: cod_escola_inep
+      type: string
+      title: Código INEP da escola
+      description: Código INEP da escola. Nome, endereço, SRE e município da escola podem ser obtidos no conjunto de endereços das escolas, cruzando por este código.
+    - name: modalidade
+      type: string
+      title: Modalidade (tipo de ensino)
+      description: 'Tipo de ensino conforme registrado no SIMADE, por exemplo: ENSINO REGULAR, INTEGRAL, INTEGRAL PROFISSIONAL, PROFISSIONAL, ENSINO REGULAR PROFISSIONAL, EDUCACAO DE JOVENS E ADULTOS (EJA) e EDUCAÇÃO DE JOVENS E ADULTOS (EJA) PROFISSIONAL. Categorias exclusivas: cada matrícula está em uma única modalidade.'
+    - name: qtd_matriculas
+      type: integer
+      title: Quantidade de matrículas
+      description: Quantidade de matrículas ativas no último dia do mês. Vazio quando o valor foi suprimido (1 a 4 matrículas) para proteção de dados pessoais (LGPD).
+    - name: suprimido
+      type: string
+      title: Valor suprimido
+      description: S = quantidade ocultada para proteção de dados pessoais (LGPD); N = quantidade divulgada.
+  scheme: file
+  title: Matrículas por modalidade - 2025
+- description: Matrículas da rede estadual de Minas Gerais por modalidade (tipo de ensino), escola e mês, ano letivo 2026. Dados de fevereiro até o último mês encerrado.
+  dialect:
+    delimiter: ;
+  encoding: utf-8-sig
+  format: csv
+  hashing: md5
+  name: see-matriculas-modalidades-2026
+  path: data/see-matriculas-modalidades-2026.csv
+  profile: tabular-data-resource
+  schema:
+    fields:
+    - name: ano
+      type: integer
+      title: Ano letivo
+      description: Ano letivo das matrículas.
+    - name: mes
+      type: integer
+      title: Mês de referência
+      description: Mês de referência (2 = fevereiro a 12 = dezembro). A contagem considera as matrículas ativas no último dia do mês.
+    - name: cod_sre
+      type: string
+      title: Código da SRE
+      description: Código da Superintendência Regional de Ensino (SRE), com 6 dígitos.
+    - name: cod_municipio_ibge
+      type: string
+      title: Código IBGE do município
+      description: Código IBGE do município (7 dígitos) do endereço de funcionamento da escola.
+    - name: cod_escola_inep
+      type: string
+      title: Código INEP da escola
+      description: Código INEP da escola. Nome, endereço, SRE e município da escola podem ser obtidos no conjunto de endereços das escolas, cruzando por este código.
+    - name: modalidade
+      type: string
+      title: Modalidade (tipo de ensino)
+      description: 'Tipo de ensino conforme registrado no SIMADE, por exemplo: ENSINO REGULAR, INTEGRAL, INTEGRAL PROFISSIONAL, PROFISSIONAL, ENSINO REGULAR PROFISSIONAL, EDUCACAO DE JOVENS E ADULTOS (EJA) e EDUCAÇÃO DE JOVENS E ADULTOS (EJA) PROFISSIONAL. Categorias exclusivas: cada matrícula está em uma única modalidade.'
+    - name: qtd_matriculas
+      type: integer
+      title: Quantidade de matrículas
+      description: Quantidade de matrículas ativas no último dia do mês. Vazio quando o valor foi suprimido (1 a 4 matrículas) para proteção de dados pessoais (LGPD).
+    - name: suprimido
+      type: string
+      title: Valor suprimido
+      description: S = quantidade ocultada para proteção de dados pessoais (LGPD); N = quantidade divulgada.
+  scheme: file
+  title: Matrículas por modalidade - 2026
+title: Matrículas da rede estadual por modalidade e escola
+description: 'Quantidade mensal de matrículas da rede estadual de ensino de Minas Gerais por modalidade (tipo de ensino) e escola, de fevereiro a dezembro, a partir de 2023. Fonte: SIMADE.'
+keywords:
+- educação
+- matrículas
+- modalidade
+- ensino integral
+- educação profissional
+- EJA
+- escolas
+- SIMADE
+licenses:
+- name: cc-by
+  title: Creative Commons Attribution 4.0
+  path: https://creativecommons.org/licenses/by/4.0/
