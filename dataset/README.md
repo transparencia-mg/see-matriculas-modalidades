@@ -1,5 +1,3 @@
-# Matrículas da rede estadual por modalidade e escola
-
 Quantidade mensal de matrículas da rede estadual de ensino de Minas Gerais por modalidade (tipo de ensino) e escola, de fevereiro a dezembro de cada ano letivo, a partir de 2023.
 
 **Modalidades:** os tipos de ensino registrados no SIMADE, como Ensino Regular, Integral, Integral Profissional, Profissional, Ensino Regular Profissional, Educação de Jovens e Adultos (EJA) e EJA Profissional.
