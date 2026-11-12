@@ -4,7 +4,7 @@
   "profile": "data-package",
   "resources": [
     {
-      "description": "Insira a descrição/explicação detalhada deste recurso.",
+      "description": "Matrículas da rede estadual de Minas Gerais por modalidade (tipo de ensino), escola e mês, ano letivo 2023.",
       "dialect": {
         "delimiter": ";"
       },
@@ -18,43 +18,59 @@
         "fields": [
           {
             "name": "ano",
-            "type": "integer"
+            "type": "integer",
+            "title": "Ano letivo",
+            "description": "Ano letivo das matrículas."
           },
           {
             "name": "mes",
-            "type": "integer"
+            "type": "integer",
+            "title": "Mês de referência",
+            "description": "Mês de referência (2 = fevereiro a 12 = dezembro). A contagem considera as matrículas ativas no último dia do mês."
           },
           {
             "name": "cod_sre",
-            "type": "integer"
+            "type": "string",
+            "title": "Código da SRE",
+            "description": "Código da Superintendência Regional de Ensino (SRE), com 6 dígitos."
           },
           {
             "name": "cod_municipio_ibge",
-            "type": "integer"
+            "type": "string",
+            "title": "Código IBGE do município",
+            "description": "Código IBGE do município (7 dígitos) do endereço de funcionamento da escola."
           },
           {
             "name": "cod_escola_inep",
-            "type": "integer"
+            "type": "string",
+            "title": "Código INEP da escola",
+            "description": "Código INEP da escola. Nome, endereço, SRE e município da escola podem ser obtidos no conjunto de endereços das escolas, cruzando por este código."
           },
           {
             "name": "modalidade",
-            "type": "string"
+            "type": "string",
+            "title": "Modalidade (tipo de ensino)",
+            "description": "Tipo de ensino conforme registrado no SIMADE, por exemplo: ENSINO REGULAR, INTEGRAL, INTEGRAL PROFISSIONAL, PROFISSIONAL, ENSINO REGULAR PROFISSIONAL, EDUCACAO DE JOVENS E ADULTOS (EJA) e EDUCAÇÃO DE JOVENS E ADULTOS (EJA) PROFISSIONAL. Categorias exclusivas: cada matrícula está em uma única modalidade."
           },
           {
             "name": "qtd_matriculas",
-            "type": "integer"
+            "type": "integer",
+            "title": "Quantidade de matrículas",
+            "description": "Quantidade de matrículas ativas no último dia do mês. Vazio quando o valor foi suprimido (1 a 4 matrículas) para proteção de dados pessoais (LGPD)."
           },
           {
             "name": "suprimido",
-            "type": "string"
+            "type": "string",
+            "title": "Valor suprimido",
+            "description": "S = quantidade ocultada para proteção de dados pessoais (LGPD); N = quantidade divulgada."
           }
         ]
       },
       "scheme": "file",
-      "title": "Insira um título humanamente legível para este recurso."
+      "title": "Matrículas por modalidade - 2023"
     },
     {
-      "description": "Insira a descrição/explicação detalhada deste recurso.",
+      "description": "Matrículas da rede estadual de Minas Gerais por modalidade (tipo de ensino), escola e mês, ano letivo 2024.",
       "dialect": {
         "delimiter": ";"
       },
@@ -68,43 +84,59 @@
         "fields": [
           {
             "name": "ano",
-            "type": "integer"
+            "type": "integer",
+            "title": "Ano letivo",
+            "description": "Ano letivo das matrículas."
           },
           {
             "name": "mes",
-            "type": "integer"
+            "type": "integer",
+            "title": "Mês de referência",
+            "description": "Mês de referência (2 = fevereiro a 12 = dezembro). A contagem considera as matrículas ativas no último dia do mês."
           },
           {
             "name": "cod_sre",
-            "type": "integer"
+            "type": "string",
+            "title": "Código da SRE",
+            "description": "Código da Superintendência Regional de Ensino (SRE), com 6 dígitos."
           },
           {
             "name": "cod_municipio_ibge",
-            "type": "integer"
+            "type": "string",
+            "title": "Código IBGE do município",
+            "description": "Código IBGE do município (7 dígitos) do endereço de funcionamento da escola."
           },
           {
             "name": "cod_escola_inep",
-            "type": "integer"
+            "type": "string",
+            "title": "Código INEP da escola",
+            "description": "Código INEP da escola. Nome, endereço, SRE e município da escola podem ser obtidos no conjunto de endereços das escolas, cruzando por este código."
           },
           {
             "name": "modalidade",
-            "type": "string"
+            "type": "string",
+            "title": "Modalidade (tipo de ensino)",
+            "description": "Tipo de ensino conforme registrado no SIMADE, por exemplo: ENSINO REGULAR, INTEGRAL, INTEGRAL PROFISSIONAL, PROFISSIONAL, ENSINO REGULAR PROFISSIONAL, EDUCACAO DE JOVENS E ADULTOS (EJA) e EDUCAÇÃO DE JOVENS E ADULTOS (EJA) PROFISSIONAL. Categorias exclusivas: cada matrícula está em uma única modalidade."
           },
           {
             "name": "qtd_matriculas",
-            "type": "integer"
+            "type": "integer",
+            "title": "Quantidade de matrículas",
+            "description": "Quantidade de matrículas ativas no último dia do mês. Vazio quando o valor foi suprimido (1 a 4 matrículas) para proteção de dados pessoais (LGPD)."
           },
           {
             "name": "suprimido",
-            "type": "string"
+            "type": "string",
+            "title": "Valor suprimido",
+            "description": "S = quantidade ocultada para proteção de dados pessoais (LGPD); N = quantidade divulgada."
           }
         ]
       },
       "scheme": "file",
-      "title": "Insira um título humanamente legível para este recurso."
+      "title": "Matrículas por modalidade - 2024"
     },
     {
-      "description": "Insira a descrição/explicação detalhada deste recurso.",
+      "description": "Matrículas da rede estadual de Minas Gerais por modalidade (tipo de ensino), escola e mês, ano letivo 2025.",
       "dialect": {
         "delimiter": ";"
       },
@@ -118,43 +150,59 @@
         "fields": [
           {
             "name": "ano",
-            "type": "integer"
+            "type": "integer",
+            "title": "Ano letivo",
+            "description": "Ano letivo das matrículas."
           },
           {
             "name": "mes",
-            "type": "integer"
+            "type": "integer",
+            "title": "Mês de referência",
+            "description": "Mês de referência (2 = fevereiro a 12 = dezembro). A contagem considera as matrículas ativas no último dia do mês."
           },
           {
             "name": "cod_sre",
-            "type": "integer"
+            "type": "string",
+            "title": "Código da SRE",
+            "description": "Código da Superintendência Regional de Ensino (SRE), com 6 dígitos."
           },
           {
             "name": "cod_municipio_ibge",
-            "type": "integer"
+            "type": "string",
+            "title": "Código IBGE do município",
+            "description": "Código IBGE do município (7 dígitos) do endereço de funcionamento da escola."
           },
           {
             "name": "cod_escola_inep",
-            "type": "integer"
+            "type": "string",
+            "title": "Código INEP da escola",
+            "description": "Código INEP da escola. Nome, endereço, SRE e município da escola podem ser obtidos no conjunto de endereços das escolas, cruzando por este código."
           },
           {
             "name": "modalidade",
-            "type": "string"
+            "type": "string",
+            "title": "Modalidade (tipo de ensino)",
+            "description": "Tipo de ensino conforme registrado no SIMADE, por exemplo: ENSINO REGULAR, INTEGRAL, INTEGRAL PROFISSIONAL, PROFISSIONAL, ENSINO REGULAR PROFISSIONAL, EDUCACAO DE JOVENS E ADULTOS (EJA) e EDUCAÇÃO DE JOVENS E ADULTOS (EJA) PROFISSIONAL. Categorias exclusivas: cada matrícula está em uma única modalidade."
           },
           {
             "name": "qtd_matriculas",
-            "type": "integer"
+            "type": "integer",
+            "title": "Quantidade de matrículas",
+            "description": "Quantidade de matrículas ativas no último dia do mês. Vazio quando o valor foi suprimido (1 a 4 matrículas) para proteção de dados pessoais (LGPD)."
           },
           {
             "name": "suprimido",
-            "type": "string"
+            "type": "string",
+            "title": "Valor suprimido",
+            "description": "S = quantidade ocultada para proteção de dados pessoais (LGPD); N = quantidade divulgada."
           }
         ]
       },
       "scheme": "file",
-      "title": "Insira um título humanamente legível para este recurso."
+      "title": "Matrículas por modalidade - 2025"
     },
     {
-      "description": "Insira a descrição/explicação detalhada deste recurso.",
+      "description": "Matrículas da rede estadual de Minas Gerais por modalidade (tipo de ensino), escola e mês, ano letivo 2026. Dados de fevereiro até o último mês encerrado.",
       "dialect": {
         "delimiter": ";"
       },
@@ -168,41 +216,75 @@
         "fields": [
           {
             "name": "ano",
-            "type": "integer"
+            "type": "integer",
+            "title": "Ano letivo",
+            "description": "Ano letivo das matrículas."
           },
           {
             "name": "mes",
-            "type": "integer"
+            "type": "integer",
+            "title": "Mês de referência",
+            "description": "Mês de referência (2 = fevereiro a 12 = dezembro). A contagem considera as matrículas ativas no último dia do mês."
           },
           {
             "name": "cod_sre",
-            "type": "integer"
+            "type": "string",
+            "title": "Código da SRE",
+            "description": "Código da Superintendência Regional de Ensino (SRE), com 6 dígitos."
           },
           {
             "name": "cod_municipio_ibge",
-            "type": "integer"
+            "type": "string",
+            "title": "Código IBGE do município",
+            "description": "Código IBGE do município (7 dígitos) do endereço de funcionamento da escola."
           },
           {
             "name": "cod_escola_inep",
-            "type": "integer"
+            "type": "string",
+            "title": "Código INEP da escola",
+            "description": "Código INEP da escola. Nome, endereço, SRE e município da escola podem ser obtidos no conjunto de endereços das escolas, cruzando por este código."
           },
           {
             "name": "modalidade",
-            "type": "string"
+            "type": "string",
+            "title": "Modalidade (tipo de ensino)",
+            "description": "Tipo de ensino conforme registrado no SIMADE, por exemplo: ENSINO REGULAR, INTEGRAL, INTEGRAL PROFISSIONAL, PROFISSIONAL, ENSINO REGULAR PROFISSIONAL, EDUCACAO DE JOVENS E ADULTOS (EJA) e EDUCAÇÃO DE JOVENS E ADULTOS (EJA) PROFISSIONAL. Categorias exclusivas: cada matrícula está em uma única modalidade."
           },
           {
             "name": "qtd_matriculas",
-            "type": "integer"
+            "type": "integer",
+            "title": "Quantidade de matrículas",
+            "description": "Quantidade de matrículas ativas no último dia do mês. Vazio quando o valor foi suprimido (1 a 4 matrículas) para proteção de dados pessoais (LGPD)."
           },
           {
             "name": "suprimido",
-            "type": "string"
+            "type": "string",
+            "title": "Valor suprimido",
+            "description": "S = quantidade ocultada para proteção de dados pessoais (LGPD); N = quantidade divulgada."
           }
         ]
       },
       "scheme": "file",
-      "title": "Insira um título humanamente legível para este recurso."
+      "title": "Matrículas por modalidade - 2026"
     }
   ],
-  "title": "See matriculas modalidades"
+  "title": "Matrículas da rede estadual por modalidade e escola",
+  "description": "Quantidade mensal de matrículas da rede estadual de ensino de Minas Gerais por modalidade (tipo de ensino) e escola, de fevereiro a dezembro, a partir de 2023. Fonte: SIMADE.",
+  "keywords": [
+    "educação",
+    "matrículas",
+    "modalidade",
+    "ensino integral",
+    "educação profissional",
+    "EJA",
+    "escolas",
+    "SIMADE"
+  ],
+  "licenses": [
+    {
+      "name": "cc-by",
+      "title": "Creative Commons Attribution 4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ]
 }
